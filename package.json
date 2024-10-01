@@ -1,0 +1,34 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Mern Ecommerce",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vyshnavisrimusali111/Ecommerce-24.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "with",
+    "node",
+    "and",
+    "express"
+  ],
+  "author": "vyshnavi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vyshnavisrimusali111/Ecommerce-24/issues"
+  },
+  "homepage": "https://github.com/vyshnavisrimusali111/Ecommerce-24#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "env": "^0.0.2",
+    "express": "^4.21.0",
+    "mongoose": "^8.7.0",
+    "nodemon": "^3.1.7"
+  }
+}

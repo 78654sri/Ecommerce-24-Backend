@@ -23,7 +23,7 @@ export const register = async (req,res)=>{
         // 3. check if the email is unique
         const existingUser = await User.findOne({email});
         if(existingUser){
-            return res.json({error:"Email is taken"})
+            return res.json({error:"Email is Already taken"})
         }
         // 4. now has the password
         const hashedPassword = await hashPassword(password)
@@ -62,7 +62,7 @@ export const login = async (req,res)=>{
         // 3. check if the email is unique
         const user = await User.findOne({email});
         if(!user){
-            return res.json({error:"User is not found"})
+            return res.json({error:"User Details are incorrect"})
         }
         // 4. compare password
         const match = await comparePassword(password,user.password)
